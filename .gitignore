@@ -1,2 +1,14 @@
 crawler/node_modules
-quiz/desktop/node_modules
+quiz/.DS_Store
+quiz/dist/electron/*
+quiz/dist/web/*
+quiz/build/*
+quiz/!build/icons
+quiz/{{#if unit}}
+quiz/coverage
+quiz/{{/if}}
+quiz/node_modules/
+quiz/npm-debug.log
+quiz/npm-debug.log.*
+quiz/thumbs.db
+quiz/!.gitkeep

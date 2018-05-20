@@ -22,7 +22,7 @@ lineReader.on('line', function (line) {
   /**
    * Word with the same meaning from 0 to N - 2
    */
-  const content = words[0]
+  const content = words[0].split(' ')
 
   /**
    * Xác định
@@ -30,12 +30,28 @@ lineReader.on('line', function (line) {
    * position
    */
   const verb = words[0]
-  const preposition = words[1]
+  const verbOnly = content[0]
+
+  /**
+   * Preposition is word only
+   * not contain sb or st
+   */
+
+  let preposition = ''
+  for (let i = 1; i < content.length; i++) {
+    if (content[i].indexOf('sb') === -1 &&
+    content[i].indexOf('st') === -1 &&
+    /^[a-z]+$/.test(content[i])) {
+      preposition = content[i]
+      break
+    }
+  }
 
 
   VprepO.push({
     id: uniqid(),
     verb,
+    verbOnly,
     preposition,
     describes: [
       {
@@ -87,10 +103,16 @@ promises.push(...[
 ])
 
 Promise.all(promises).then(() => {
+  const prepositions = new Set()
+  VprepO.map(word => {
+    prepositions.add(word.preposition)
+  })
+
   //Save file here
   helper.saveContentToFile(path.resolve(__dirname, "output.json"), {
     phrasalVerbs,
-    VprepO
+    VprepO,
+    prepositions: [...prepositions]
   })
 }).catch(err => {
   console.log(err)

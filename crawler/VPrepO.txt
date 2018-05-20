@@ -1,5 +1,6 @@
 Ashamed of : xấu hổ về…
 Afraid of : sợ, e ngại…
+Ahead of: trước
 Aware of : nhận thức
 Capable of : có khả năng
 Confident of : tin tưởng
@@ -19,38 +20,38 @@ Joyful of : vui mừng về
 Quick of : nhanh chóng về, mau
 Tired of : mệt mỏi
 Terrified of : khiếp sợ về
-Able : có thể
-Acceptable : có thể chấp nhận
-Accustomed : quen với
-Agreeable : có thể đồng ý
-Addicted : đam mê
-Available sb : sẵn cho ai
-Delightfull sb : thú vị đối với ai
-Familiar sb : quen thuộc đối với ai
-Clear : rõ ràng
-Contrary : trái lại, đối lập
-Equal : tương đương với
-Exposed : phơi bày, để lộ
-Favourable : tán thành, ủng hộ
-Grateful sb : biết ơn ai
-Harmful sb (for sth) : có hại cho ai (cho cái gì)
-Important : quan trọng
-Identical sb : giống hệt
-Kind : tử tế
-Likely : có thể
-Lucky : may mắn
-Liable : có khả năng bị
-Necessary sth/sb : cần thiết cho việc gì / cho ai
-Next : kế bên
-Open : cởi mở
-Pleasant : hài lòng
-Preferable : đáng thích hơn
-Profitable : có lợi
-Responsible sb : có trách nhiệm với ai
-Rude : thô lỗ, cộc cằn
-Similar : giống, tương tự
-Useful sb : có ích cho ai
-Willing : sẵn lòng
+Able to : có thể
+Acceptable to : có thể chấp nhận
+Accustomed to : quen với
+Agreeable to : có thể đồng ý
+Addicted to : đam mê
+Available to sb : sẵn cho ai
+Delightfull to sb : thú vị đối với ai
+Familiar to sb : quen thuộc đối với ai
+Clear to : rõ ràng
+Contrary to : trái lại, đối lập
+Equal to : tương đương với
+Exposed to : phơi bày, để lộ
+Favourable to : tán thành, ủng hộ
+Grateful to sb : biết ơn ai
+Harmful to sb (for sth) : có hại cho ai (cho cái gì)
+Important to : quan trọng
+Identical to sb : giống hệt
+Kind to : tử tế
+Likely to : có thể
+Lucky to : may mắn
+Liable to : có khả năng bị
+Necessary to sth/sb : cần thiết cho việc gì / cho ai
+Next to : kế bên
+Open to : cởi mở
+Pleasant to : hài lòng
+Preferable to : đáng thích hơn
+Profitable to : có lợi
+Responsible to sb : có trách nhiệm với ai
+Rude to : thô lỗ, cộc cằn
+Similar to : giống, tương tự
+Useful to sb : có ích cho ai
+Willing to : sẵn lòng
 Available for sth : có sẵn (cái gì)
 Anxious for, about : lo lắng
 Bad for : xấu cho
@@ -82,7 +83,7 @@ demiss sb/st from: giải tán cái gì
 draw st from st: rút cái gì
 emerge from st: nhú lên cái gì
 escape from ..: thoát ra từ cái gì
-himder sb from st = prevent st from: ngăn cản ai cái gì
+himder sb from st = To prevent st from: ngăn cản ai cái gì
 protect sb /st from: bảo vệ ai /bảo về cái gì
 prohibit sb from doing st: cấm ai làm việc gì
 separate st/sb from st/sb: tách cái gì ra khỏi cái gì / tách ai ra khỏi ai
@@ -117,8 +118,9 @@ sorry about st: lấy làm tiếc ,hối tiếc về cái gì
 curious about st: tò mò về cái gì
 doublfut about st: hoài nghi về cái gì
 enthusiastic about st: hào hứng về cái gì
-reluctan about st (or ) st: ngần ngại,hừng hờ với cái gì
+reluctan about st (or to ) st: ngần ngại,hừng hờ với cái gì
 uneasy about st: không thoải mái
+Tham khảo: Bí quyết học tiếng Anh siêu đẳng tại BÍ QUYẾT HỌC TIẾNG ANH
 angry with sb: giận dỗi ai
 busy with st:bận với cái gì
 consistent with st: kiên trì chung thủy với cái gì
