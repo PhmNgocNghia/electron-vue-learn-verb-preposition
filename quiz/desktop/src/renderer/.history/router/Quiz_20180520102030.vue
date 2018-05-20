@@ -220,9 +220,7 @@ export default {
         case quizType.learnNew:
           pharasalVerbs = db
             .get(tableName)
-            .filter({
-              lastLearn: null
-            })
+            .filter((pharasalVerb) => pharasalVerb.lastLearn === null)
             .take(this.numWordLearnEachTime)
             .value()
           break

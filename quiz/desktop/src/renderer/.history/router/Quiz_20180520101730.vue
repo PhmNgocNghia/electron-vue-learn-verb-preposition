@@ -190,16 +190,16 @@ export default {
       this.answers = new Array(this.numWordLearnEachTime).fill(0)
 
       // Generate filterCondition
+      let learnWhatCondition = null
       const tableName =
-        this.$store.state.settings.learnWhat ===
-          learnWhat.phrasalVerb ? 'phrasalVerbs' : 'VprepO'
+        this.$store.state.settings.learnWhat === learnWhat.phrasalVerb ? 'phrasalVerbs' : 'VprepO'
 
       let pharasalVerbs = null
 
       switch (this.$route.params.quizType) {
         case quizType.reviewLearned: // build this
           pharasalVerbs = db
-            .get(tableName)
+            .get('phrasalVerbs')
             .filter((pharasalVerb) => pharasalVerb.lastLearn !== null)
             .sortBy((pharasalVerb) => new Date(pharasalVerb.lastLearn))
             .take(this.numWordLearnEachTime)
@@ -208,10 +208,10 @@ export default {
 
         case quizType.reviewBookmarked:
           pharasalVerbs = db
-            .get(tableName)
-            .filter({
+            .get('phrasalVerbs')
+            .filter(Object.assign({}, {
               isBookmarked: true
-            })
+            }, learnWhatCondition))
             .sortBy((pharasalVerb) => new Date(pharasalVerb.lastLearn))
             .take(this.numWordLearnEachTime)
             .value()
@@ -219,10 +219,10 @@ export default {
 
         case quizType.learnNew:
           pharasalVerbs = db
-            .get(tableName)
-            .filter({
+            .get('phrasalVerbs')
+            .filter(Object.assign({}, {
               lastLearn: null
-            })
+            }, learnWhatCondition))
             .take(this.numWordLearnEachTime)
             .value()
           break

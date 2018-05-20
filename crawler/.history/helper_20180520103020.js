@@ -79,7 +79,7 @@ module.exports = {
       foundSameWord = true;
     } else { // If doesn't found same word
         list.push({
-        verb: phrasalVerb,
+        verbs: [phrasalVerb],
         describes: [...describes],
         isBookmarked: false,
         lastLearn: null,

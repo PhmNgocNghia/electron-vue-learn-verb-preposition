@@ -15,7 +15,7 @@
         v-for = "(quiz, index) in quizzes">
         <!-- <v-btn color="yellow" :round = "true">Lưu lại từ này</v-btn> -->
         <div class= "title mt-3">
-          Câu {{index + 1}} / {{numWordLearnEachTime}} : <b> {{quiz.phrasalVerb.verb}} </b>
+          Câu {{index + 1}} / {{numWordLearnEachTime}} : <b> {{quiz.phrasalVerb}} </b>
         </div>
         <v-radio-group
         v-model = "answers[index]">

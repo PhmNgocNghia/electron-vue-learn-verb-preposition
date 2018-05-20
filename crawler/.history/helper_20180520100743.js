@@ -79,10 +79,10 @@ module.exports = {
       foundSameWord = true;
     } else { // If doesn't found same word
         list.push({
-        verb: phrasalVerb,
+        verbs: [phrasalVerb],
         describes: [...describes],
         isBookmarked: false,
-        lastLearn: null,
+        isLearned: false,
       })
     }
   },
@@ -157,7 +157,7 @@ module.exports = {
     return new Promise(resolve => setTimeout(resolve, ms));
   },
 
-  readPhrasalVerb(fileName, list) {
+  readPharasalVerb(fileName, list) {
     var self = this
     return fs.readFile(path.resolve(__dirname, fileName), 'utf8', function (err, data) {
       var importPharasalVerbs =  JSON.parse(data);

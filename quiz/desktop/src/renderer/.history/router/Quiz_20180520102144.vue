@@ -221,7 +221,7 @@ export default {
           pharasalVerbs = db
             .get(tableName)
             .filter({
-              lastLearn: null
+              lastLearns: null
             })
             .take(this.numWordLearnEachTime)
             .value()

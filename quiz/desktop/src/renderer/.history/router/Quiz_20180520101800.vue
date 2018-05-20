@@ -190,6 +190,7 @@ export default {
       this.answers = new Array(this.numWordLearnEachTime).fill(0)
 
       // Generate filterCondition
+      let learnWhatCondition = null
       const tableName =
         this.$store.state.settings.learnWhat ===
           learnWhat.phrasalVerb ? 'phrasalVerbs' : 'VprepO'
@@ -220,9 +221,9 @@ export default {
         case quizType.learnNew:
           pharasalVerbs = db
             .get(tableName)
-            .filter({
+            .filter(Object.assign({}, {
               lastLearn: null
-            })
+            }, learnWhatCondition))
             .take(this.numWordLearnEachTime)
             .value()
           break
